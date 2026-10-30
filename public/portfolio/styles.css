@@ -135,19 +135,67 @@ nav .right a:last-child:hover {
   margin-bottom: 100px;
 }
 
+.projects-section .projects-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
 .projects-section h2 {
   font-size: 36px;
-  margin-bottom: 30px;
   color: #f0f6fc;
 }
 
-.projects-section .projects {
+.carousel-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-btn {
+  width: 44px;
+  height: 44px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  place-items: center;
+  font-size: 16px;
+  color: var(--link-color);
+  background-color: var(--card-color);
+  border: 1.5px solid var(--border-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.carousel-btn:hover {
+  border-color: var(--link-color);
+  background-color: var(--link-color);
+  color: var(--background-color);
+}
+
+.carousel {
+  overflow: hidden;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+  padding: 10px 0;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+}
+
+.carousel.is-dragging {
+  cursor: grabbing;
+}
+
+.carousel-track {
+  display: flex;
   gap: 24px;
+  width: max-content;
+  will-change: transform;
 }
 
 .projects-section .project {
+  flex: 0 0 320px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -411,6 +459,14 @@ nav .right a:last-child:hover {
 }
 
 @media (max-width: 600px) {
+  .projects-section .project {
+    flex-basis: 270px;
+  }
+
+  .projects-section h2 {
+    font-size: 30px;
+  }
+
   nav {
     padding: 0 20px;
   }

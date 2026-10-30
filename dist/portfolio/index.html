@@ -93,65 +93,113 @@
 
       <!-- SECTION 2: Projects -->
       <section id="projects" class="projects-section">
-        <h2>Projetos</h2>
+        <div class="projects-head">
+          <h2>Projetos</h2>
+          <div class="carousel-controls">
+            <button type="button" class="carousel-btn" data-dir="-1" aria-label="Projeto anterior">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+            </button>
+            <button type="button" class="carousel-btn" data-dir="1" aria-label="Próximo projeto">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
 
-        <div class="projects">
-          <article class="project">
-            <span class="project-tag">ARKx · Experiência imersiva</span>
-            <h3>Experiência imersiva Tarsila do Amaral</h3>
-            <p>
-              Desenvolvi o percurso da câmera e a composição dos elementos 3D
-              da cena, criando um efeito de plano-sequência que conecta as
-              obras de Tarsila do Amaral numa experiência imersiva para o
-              público.
-            </p>
-            <ul class="project-stack">
-              <li>3D</li>
-              <li>Animação de câmera</li>
-              <li>Composição de cena</li>
-            </ul>
-          </article>
+        <div class="carousel" aria-roledescription="carrossel">
+          <div class="carousel-track">
+            <article class="project">
+              <span class="project-tag">ARKx · Experiência imersiva</span>
+              <h3>Experiência imersiva Tarsila do Amaral</h3>
+              <p>
+                Desenvolvi o percurso da câmera e a composição dos elementos 3D da cena, criando um efeito de plano-sequência que conecta as obras de Tarsila do Amaral numa experiência imersiva para o público.
+              </p>
+              <ul class="project-stack">
+                <li>3D</li>
+                <li>Animação de câmera</li>
+                <li>Composição de cena</li>
+              </ul>
+            </article>
 
-          <article class="project">
-            <span class="project-tag">Projeto pessoal</span>
-            <h3>Handpath</h3>
-            <p>
-              Plataforma de treino de poker com landing page animada, quiz de
-              nível e um simulador de mesa contra bots com estilos de jogo
-              diferentes, contas de usuário e relatório da sessão.
-            </p>
-            <ul class="project-stack">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>GSAP</li>
-              <li>Supabase</li>
-            </ul>
-            <a class="project-link" href="https://handpath.vercel.app" target="_blank" rel="noopener noreferrer">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              <span>Ver projeto</span>
-            </a>
-          </article>
+            <article class="project">
+              <span class="project-tag">Projeto pessoal · SaaS</span>
+              <h3>Briquefy</h3>
+              <p>
+                Plataforma de gestão de vendas, estoque e financeiro para revendedores, com planos de assinatura e cobrança via Pix pelo Asaas.
+              </p>
+              <ul class="project-stack">
+                <li>React</li>
+                <li>API no Render</li>
+                <li>Asaas</li>
+                <li>Pix</li>
+              </ul>
+              <a class="project-link" href="https://briquefy.vercel.app" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Ver projeto</span>
+              </a>
+            </article>
 
-          <article class="project">
-            <span class="project-tag">Projeto pessoal</span>
-            <h3>Portfólio 3D</h3>
-            <p>
-              Este portfólio: uma cena 3D com um notebook interativo que dá zoom
-              e mostra o site na tela, com animações de câmera e versão simples
-              para celular.
-            </p>
-            <ul class="project-stack">
-              <li>React</li>
-              <li>React Three Fiber</li>
-              <li>Three.js</li>
-              <li>GSAP</li>
-            </ul>
-            <a class="project-link" href="https://github.com/arthurcanz/portifolio-arthur" target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-github"></i>
-              <span>Ver código</span>
-            </a>
-          </article>
+            <article class="project">
+              <span class="project-tag">Projeto pessoal</span>
+              <h3>Handpath</h3>
+              <p>
+                Plataforma de treino de poker com landing page animada, quiz de nível e um simulador de mesa contra bots com estilos de jogo diferentes, contas de usuário e relatório da sessão.
+              </p>
+              <ul class="project-stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>GSAP</li>
+                <li>Supabase</li>
+              </ul>
+              <a class="project-link" href="https://handpath.vercel.app" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Ver projeto</span>
+              </a>
+            </article>
+
+            <article class="project">
+              <span class="project-tag">Projeto pessoal · IA</span>
+              <h3>Spotify MCP</h3>
+              <p>
+                Servidor MCP que conecta o Claude à API do Spotify: cria playlists e controla o player pela conversa, a partir das músicas que eu mais ouço.
+              </p>
+              <ul class="project-stack">
+                <li>TypeScript</li>
+                <li>Next.js</li>
+                <li>Spotify API</li>
+                <li>MCP</li>
+                <li>Vercel</li>
+              </ul>
+            </article>
+
+            <article class="project">
+              <span class="project-tag">Challenge FIAP x JOVI</span>
+              <h3>Study Cam</h3>
+              <p>
+                Conceito de recurso com IA para a câmera dos smartphones JOVI: alerta de distração durante a aula e resumo da aula organizado por IA. Projeto em equipe (SafeTech), com storytelling e minivídeo de campanha.
+              </p>
+              <ul class="project-stack">
+                <li>IA</li>
+                <li>Produto</li>
+                <li>Storytelling</li>
+                <li>Trabalho em equipe</li>
+              </ul>
+            </article>
+
+            <article class="project">
+              <span class="project-tag">Ferramenta pessoal</span>
+              <h3>busca-lead</h3>
+              <p>
+                Ferramenta de prospecção que busca negócios locais pela API do Google Places, identifica quem não tem site e pontua os contatos com mais chance de virar cliente.
+              </p>
+              <ul class="project-stack">
+                <li>JavaScript</li>
+                <li>Google Places API</li>
+                <li>Supabase</li>
+                <li>Vercel</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -249,18 +297,6 @@
       </section>
     </main>
 
-    <script>
-      // links internos (#secao) rolam dentro da propria pagina,
-      // sem afetar o site de fora quando ela esta dentro do iframe
-      document.addEventListener("click", (e) => {
-        const link = e.target.closest("a[href^='#']");
-        if (!link) return;
-        const target = document.querySelector(link.getAttribute("href"));
-        if (!target) return;
-        e.preventDefault();
-        const y = target.getBoundingClientRect().top + window.scrollY;
-        window.scrollTo({ top: y, behavior: "smooth" });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
