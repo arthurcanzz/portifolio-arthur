@@ -11,6 +11,11 @@ const isSmallScreen = window.matchMedia("(max-width: 768px)").matches;
 
 const STORAGE_KEY = "portfolio-lang";
 
+const FLAGS = {
+  pt: { src: "./flags/br.svg", label: "Português" },
+  en: { src: "./flags/us.svg", label: "English" },
+};
+
 const TEXTS = {
   pt: {
     hint: "Clique na tela do notebook para abrir o portfólio",
@@ -125,9 +130,11 @@ function App() {
             type="button"
             className={lang === code ? "is-active" : ""}
             aria-pressed={lang === code}
+            aria-label={FLAGS[code].label}
+            title={FLAGS[code].label}
             onClick={() => setLang(code)}
           >
-            {code.toUpperCase()}
+            <img src={FLAGS[code].src} alt="" width="26" height="18" />
           </button>
         ))}
       </div>
