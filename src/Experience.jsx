@@ -8,7 +8,6 @@ import {
   ContactShadows,
 } from "@react-three/drei";
 import gsap from 'gsap';
-import {useGSAP} from '@gsap/react'
 import { useRef } from "react";
 
 export default function Experience() {
@@ -23,7 +22,6 @@ export default function Experience() {
   const tl = gsap.timeline();
 
   const zoomInLaptop = () => {
-    console.log(" dsfsdf")
     if (laptopRef.current && nameRef.current) {
 
       overlayRef.current.style.display = "none"
@@ -45,16 +43,6 @@ export default function Experience() {
   }
   
 
-  /* useGSAP(() => {
-    if (laptopRef.current && nameRef.current) {
-      const tl = gsap.timeline({delay: 1});
-      tl.to(nameRef.current.material,{duration:1, ease: "power4.out", opacity:0})
-      tl.to(laptopRef.current.position, {duration: 1.5, ease: "power4.out", x: -2, y: -0.8, z: 2 }, "-=0.8")
-      tl.to(laptopRef.current.rotation, {duration: 1.5, ease: "power4.out", y: -0.8 }, "<")
-      
-    }
-    //position-x={-2} position-y={-0.8} position-z={2} rotation-y={-0.8}
-  }, { scope: laptopRef }) */
 
   return (
     <>
@@ -90,7 +78,8 @@ export default function Experience() {
               zIndexRange={[100, 0]}
             >
               <iframe
-                src="/portfolio/index.html"
+                title="Portfólio de Arthur Canzian"
+                src="./portfolio/index.html"
                 style={{
                   width: "1024px",
                   height: "640px",

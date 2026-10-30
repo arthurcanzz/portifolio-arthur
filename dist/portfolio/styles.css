@@ -122,9 +122,95 @@ nav .right a:last-child:hover {
 
 .hero-section .headshot img {
   width: 320px;
+  height: auto;
+  max-width: 100%;
   border-radius: 50%;
   border: 2px solid var(--border-color);
   box-shadow: 0 0 20px rgba(88, 166, 255, 0.2);
+}
+
+/* SECTION: Projects */
+.projects-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.projects-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #f0f6fc;
+}
+
+.projects-section .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.projects-section .project {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  background-color: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+
+.projects-section .project:hover {
+  transform: translateY(-5px);
+  border-color: var(--link-color);
+}
+
+.projects-section .project-tag {
+  font-size: 13px;
+  color: var(--link-color);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.projects-section .project h3 {
+  font-size: 22px;
+  color: #f0f6fc;
+}
+
+.projects-section .project p {
+  color: var(--subtext-color);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.projects-section .project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.projects-section .project-stack li {
+  font-size: 13px;
+  padding: 4px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--text-color);
+}
+
+.projects-section .project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 8px 16px;
+  border: 1.5px solid var(--link-color);
+  border-radius: 6px;
+}
+
+.projects-section .project-link:hover {
+  background-color: var(--link-color);
+  color: var(--background-color);
 }
 
 /* SECTION 2: Skills */
@@ -220,6 +306,12 @@ nav .right a:last-child:hover {
   font-weight: 600;
 }
 
+.testimony-section .group .person-details .role {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--subtext-color);
+}
+
 .testimony-section .group .text {
   flex: 8;
   color: var(--subtext-color);
@@ -308,7 +400,7 @@ nav .right a:last-child:hover {
     width: 280px;
   }
 
-  .depoimentos-section .group {
+  .testimony-section .group {
     flex-direction: column;
     text-align: center;
   }
@@ -323,9 +415,31 @@ nav .right a:last-child:hover {
     padding: 0 20px;
   }
 
+  nav .left a {
+    font-size: 18px;
+  }
+
+  nav .right a {
+    margin: 0 4px;
+  }
+
+  nav .right a span {
+    display: none;
+  }
+
+  .hero-section .text h2 {
+    font-size: 32px;
+  }
+
+  .testimony-section .group {
+    padding: 24px;
+    gap: 20px;
+  }
+
   .hero-section,
+  .projects-section,
   .skills-section,
-  .depoimentos-section,
+  .testimony-section,
   .contact-section {
     padding: 0 20px;
   }

@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Arthur Canzian, estudante de Engenharia de Software na FIAP e desenvolvedor front-end com foco em experiências interativas e 3D."
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,40 +26,32 @@
 
     <link rel="stylesheet" href="styles.css" />
 
-    <title>Portfolio</title>
+    <title>Arthur Canzian | Portfólio</title>
   </head>
   <body>
-    <script>
-  window.addEventListener("beforeunload", () => {
-    console.log("iframe recarregando!");
-  });
-</script>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="left">
+        <a href="#hero">Arthur Canzian</a>
+      </div>
 
-<!-- NAVBAR -->
-<nav>
-  <div class="left">
-    <a href="#hero">Arthur Canzian</a>
-  </div>
+      <div class="right">
+        <a href="https://github.com/arthurcanz" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
 
-  <div class="right">
-    <a href="https://github.com/arthurcanz" target="_blank" rel="noopener noreferrer">
-      <i class="fa-brands fa-github"></i>
-      <span>Github</span>
-    </a>
+        <a href="https://www.linkedin.com/in/arthur-canzian-1b489a398/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Linkedin</span>
+        </a>
 
-    <a href="https://www.linkedin.com/in/arthur-canzian-1b489a398/" target="_blank" rel="noopener noreferrer">
-      <i class="fa-brands fa-linkedin"></i>
-      <span>Linkedin</span>
-    </a>
-
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arthurleo2007@gmail.com" target="_blank" rel="noopener noreferrer">
-      <i class="fa-solid fa-envelope"></i>
-      <span>Email</span>
-    </a>
-
-  </div>
-</nav>
-
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=arthurteo2007@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+    </nav>
 
     <main>
       <!-- SECTION 1: Hero -->
@@ -63,26 +59,24 @@
         <div class="text">
           <h2>Oi, sou o Arthur 👋</h2>
           <p>
-            Sou um desenvolvedor júnior apaixonado por tecnologia e inovação.
-            Tenho experiência com HTML, CSS, JavaScript, Three.js, Node.js, Vue.js, React
-            , GSAP, Blender, criando projetos que unem design, criatividade, interatividade e
-            performance. Atualmente, faço parte da equipe da ArkX, onde tenho a
-            oportunidade de aprender continuamente e aplicar meus conhecimentos
-            no desenvolvimento de soluções reais. Sou fluente em inglês e
-            iniciei minha graduação em Engenharia de Software na FIAP em 2026 e vou terminar em 2029
-            com o objetivo de consolidar minha carreira na área de
-            desenvolvimento.
+            Sou estudante de Engenharia de Software na FIAP (2026 a 2029) e
+            desenvolvedor front-end com foco em experiências interativas e 3D.
+            Trabalho com HTML, CSS, JavaScript, React, Vue.js, Node.js,
+            Three.js, GSAP e Blender. Colaboro com a ARKx, estúdio de AR/VR e
+            tecnologia criativa, em experiências imersivas e projetos para
+            marcas. Tenho inglês avançado e busco uma oportunidade de estágio
+            em desenvolvimento web.
           </p>
 
           <div class="links">
+            <a href="#projects">
+              <i class="fa-solid fa-cube"></i>
+              <span>Projetos</span>
+            </a>
+
             <a href="#skills">
               <i class="fa-solid fa-code"></i>
               <span>Skills</span>
-            </a>
-
-            <a href="#testimony">
-              <i class="fa-solid fa-pen"></i>
-              <span>Feedbacks</span>
             </a>
 
             <a href="#contact">
@@ -90,74 +84,132 @@
               <span>Contato</span>
             </a>
           </div>
-
         </div>
 
         <div class="headshot">
-          <img src="images/hero-headshot.webp" alt="foto arthur" />
+          <img src="images/hero-headshot.webp" alt="Foto de Arthur Canzian" width="320" height="427" />
         </div>
       </section>
 
-      <!-- SECTION 2: Skills -->
+      <!-- SECTION 2: Projects -->
+      <section id="projects" class="projects-section">
+        <h2>Projetos</h2>
+
+        <div class="projects">
+          <article class="project">
+            <span class="project-tag">ARKx · Experiência imersiva</span>
+            <h3>Experiência imersiva Tarsila do Amaral</h3>
+            <p>
+              Desenvolvi o percurso da câmera e a composição dos elementos 3D
+              da cena, criando um efeito de plano-sequência que conecta as
+              obras de Tarsila do Amaral numa experiência imersiva para o
+              público.
+            </p>
+            <ul class="project-stack">
+              <li>3D</li>
+              <li>Animação de câmera</li>
+              <li>Composição de cena</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <span class="project-tag">Projeto pessoal</span>
+            <h3>Handpath</h3>
+            <p>
+              Plataforma de treino de poker com landing page animada, quiz de
+              nível e um simulador de mesa contra bots com estilos de jogo
+              diferentes, contas de usuário e relatório da sessão.
+            </p>
+            <ul class="project-stack">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>GSAP</li>
+              <li>Supabase</li>
+            </ul>
+            <a class="project-link" href="https://handpath.vercel.app" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>Ver projeto</span>
+            </a>
+          </article>
+
+          <article class="project">
+            <span class="project-tag">Projeto pessoal</span>
+            <h3>Portfólio 3D</h3>
+            <p>
+              Este portfólio: uma cena 3D com um notebook interativo que dá zoom
+              e mostra o site na tela, com animações de câmera e versão simples
+              para celular.
+            </p>
+            <ul class="project-stack">
+              <li>React</li>
+              <li>React Three Fiber</li>
+              <li>Three.js</li>
+              <li>GSAP</li>
+            </ul>
+            <a class="project-link" href="https://github.com/arthurcanz/portifolio-arthur" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github"></i>
+              <span>Ver código</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION 3: Skills -->
       <section id="skills" class="skills-section">
         <h2>Skills</h2>
         <div class="text">
-          Ao longo da minha jornada, venho explorando tecnologias que me
-          permitem transformar ideias em experiências digitais. Minha formação e
-          estudos me deram uma base sólida em desenvolvimento front-end e
-          back-end, além de interesse crescente em gráficos 3D e interfaces
-          interativas. Sou motivado por desafios que me fazem crescer como
-          profissional e me impulsionam a aprender novas ferramentas todos os
-          dias.
+          Tecnologias que uso para transformar ideias em experiências
+          digitais, do front-end ao 3D.
         </div>
 
         <div class="cells">
           <div class="cell">
-            <img src="images/html-logo.webp" alt="html logo" />
+            <img src="images/html-logo.webp" alt="" />
             <span>HTML</span>
           </div>
 
           <div class="cell">
-            <img src="images/css-logo.webp" alt="css logo" />
+            <img src="images/css-logo.webp" alt="" />
             <span>CSS</span>
           </div>
 
           <div class="cell">
-            <img src="images/javascript-logo.webp" alt="javascript logo" />
+            <img src="images/javascript-logo.webp" alt="" />
             <span>JavaScript</span>
           </div>
 
           <div class="cell">
-            <img src="images/node-logo.webp" alt="node logo" />
+            <img src="images/node-logo.webp" alt="" />
             <span>Node.js</span>
           </div>
 
           <div class="cell">
-            <img src="images/react-logo.webp" alt="react logo" />
+            <img src="images/react-logo.webp" alt="" />
             <span>React.js</span>
           </div>
 
           <div class="cell">
-            <img src="images/three-js.webp" alt="react logo" />
+            <img src="images/three-js.webp" alt="" />
             <span>Three.js</span>
           </div>
 
           <div class="cell">
-            <img src="images/blender.logo.webp" alt="react logo" />
+            <img src="images/blender.logo.webp" alt="" />
             <span>Blender</span>
           </div>
         </div>
       </section>
 
-      <!-- SECTION 3: Testimony -->
+      <!-- SECTION 4: Testimony -->
       <section id="testimony" class="testimony-section">
         <h2>Feedbacks</h2>
 
         <div class="group">
           <div class="person-details">
-            <img src="images/testimony-headshot.webp" />
+            <img src="images/testimony-headshot.webp" alt="Foto de Tiago" width="180" height="180" />
             <p>Tiago</p>
-            <p>CEO da ArkX</p>
+            <p class="role">Cofundador e Head of XR da ARKx</p>
           </div>
 
           <div class="text">
@@ -170,16 +222,16 @@
         </div>
       </section>
 
-      <!-- SECTION 4: Contact -->
+      <!-- SECTION 5: Contact -->
       <section id="contact" class="contact-section">
         <h2>Contato</h2>
 
         <div class="group">
           <div class="text">
-            Estou sempre aberto a novas oportunidades, colaborações e projetos
-            desafiadores. Se você busca alguém comprometido, comunicativo e com
-            sede de aprendizado, entre em contato comigo — será um prazer
-            conversar!
+            Estou aberto a oportunidades de estágio, colaborações e projetos
+            desafiadores. Se quiser conversar, me manda uma mensagem por aqui
+            ou pelo e-mail
+            <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=arthurteo2007@gmail.com" target="_blank" rel="noopener noreferrer">arthurteo2007@gmail.com</a>.
           </div>
 
           <form action="https://formspree.io/f/xkgkngga" method="POST">
@@ -192,31 +244,23 @@
               required
             ></textarea>
             <button type="submit">Enviar mensagem</button>
-
-            <!-- Proteções e redirecionamento -->
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_next" value="sucesso.html" />
           </form>
         </div>
       </section>
     </main>
-<script>
-  // Impede que cliques em links âncora dentro do iframe
-  // sejam interpretados pelo site de fora
-  document.addEventListener("click", (e) => {
-    const link = e.target.closest("a[href^='#']");
-    if (!link) return;
-    e.preventDefault(); // evita comportamento padrão (que faz a tela subir)
-    const target = document.querySelector(link.getAttribute("href"));
-    const yPos = target.getBoundingClientRect().y;
-    console.log(yPos)
-    window.scrollTo(0, yPos)
 
-    /* if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    } */
-  });
-</script>
-
+    <script>
+      // links internos (#secao) rolam dentro da propria pagina,
+      // sem afetar o site de fora quando ela esta dentro do iframe
+      document.addEventListener("click", (e) => {
+        const link = e.target.closest("a[href^='#']");
+        if (!link) return;
+        const target = document.querySelector(link.getAttribute("href"));
+        if (!target) return;
+        e.preventDefault();
+        const y = target.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      });
+    </script>
   </body>
 </html>
