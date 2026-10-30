@@ -47,10 +47,47 @@ nav {
   backdrop-filter: blur(8px);
 }
 
+nav .left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 nav .left a {
   color: var(--text-color);
   font-size: 22px;
   font-weight: 600;
+}
+
+/* botao de idioma: dentro do iframe quem mostra e a pagina de fora */
+.lang-switch {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background-color: var(--card-color);
+}
+
+.in-frame .lang-switch {
+  display: none;
+}
+
+.lang-switch button {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 999px;
+  color: var(--subtext-color);
+  background: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.lang-switch button.is-active {
+  color: var(--background-color);
+  background-color: var(--link-color);
 }
 
 nav .right a {

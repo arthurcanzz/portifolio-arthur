@@ -43,3 +43,49 @@ body,
 .hint--hidden {
   opacity: 0;
 }
+
+/* botao de idioma no canto superior esquerdo */
+.lang-switch {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  display: inline-flex;
+  padding: 4px;
+  border: 1px solid #30363d;
+  border-radius: 999px;
+  background: rgba(22, 27, 34, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+.lang-switch button {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 999px;
+  color: #9ba3af;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.lang-switch button:hover {
+  color: #e6edf3;
+}
+
+.lang-switch button.is-active {
+  color: #0e1117;
+  background: #58a6ff;
+}
+
+/* versao simples em tela cheia, se a cena 3D falhar */
+.fallback-frame {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #0e1117;
+}
