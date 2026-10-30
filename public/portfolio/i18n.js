@@ -12,7 +12,7 @@
 
     "hero.title": "Hi, I'm Arthur 👋",
     "hero.text":
-      "I'm a Software Engineering student at FIAP (2026–2029) and a front-end developer focused on interactive and 3D experiences. I work with HTML, CSS, JavaScript, React, Vue.js, Node.js, Three.js, GSAP and Blender. I collaborate with ARKx, an AR/VR and creative technology studio, on immersive experiences and brand projects. I'm looking for a web development internship.",
+      "I'm a Software Engineering student at FIAP (2026–2029) and a front-end developer focused on interactive and 3D experiences. I work with HTML, CSS, JavaScript, React, Vue.js, Node.js, Three.js, GSAP and Blender. I worked with ARKx, an AR/VR and creative technology studio, on immersive experiences and brand projects. I'm looking for a web development internship.",
     "hero.alt": "Photo of Arthur Canzian",
     "nav.projects": "Projects",
     "nav.contact": "Contact",
@@ -25,7 +25,7 @@
     "p1.tag": "ARKx · Immersive experience",
     "p1.title": "Tarsila do Amaral immersive experience",
     "p1.text":
-      "I built the camera path and laid out the 3D elements of the scene, creating a one-shot effect that connects Tarsila do Amaral's paintings in an immersive experience for visitors.",
+      "In Blender, I built the camera path and laid out the 3D elements of the scene, creating a one-shot effect that connects Tarsila do Amaral's paintings in an immersive experience for visitors.",
     "p2.tag": "Personal project · SaaS",
     "p2.text":
       "Sales, inventory and finance management platform for resellers, with subscription plans and Pix payments through Asaas.",
